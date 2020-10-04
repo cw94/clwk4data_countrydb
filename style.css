@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header {
+  background-color: #57068c;
+  position: fixed;
+  width: 100%;
+  z-index:500;
+}
+
+.headerText{
+  color:#fff;
+  font-size: 2.1rem;
+  padding: 20px;
+}
+
+.section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.center{
+  text-align: center;
+}
+
+.first-title{
+  font-size: 2.1rem;
+  padding: 20px;
+}
+
+.second-title{
+  font-size: 1.1rem;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 90%;
+}
+
+.textfield-container {
+  height:auto;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 50%;
+}
+
+.textarea-style{
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+}
+
+.btn-large{
+	font-size: 18px!important;
+	height: 50px;
+	line-height: 18px!important;
+	padding: 5px 18px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight: normal;
+	border-radius: 3px;
+	margin: 0 8px 0 3px;
+	border: 0.5px solid #3383da;
+	color: #ffffff;
+	background-color: #57068c;
+	cursor: pointer;
+}
+
+.btn-large:hover,active{
+	background-color: #31094B;
+}
+
+.purple-text{
+	color: #57068c;
+}

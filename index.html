@@ -1,86 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <link href="style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <title>Web Demo</title>
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
-<body>
-  <nav class="lighten-1 purple darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="https://shanghai.nyu.edu/academics/majors/interactive-media-arts" class="brand-logo">Made By Celine Wu&nbsp;</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="https://nyu.edu">NYU Home</a></li>
-      </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="https://nyu.edu">NYU Home</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-  <div class="section no-pad-bot" id="index-banner">
-    <div class="container">
+<body>
+<div class="header" role="navigation">
+  <div class="headerText">Made by Celine Wu</div>  
+   </div>
+	<div class="section" id="index-banner">
+	 <div class="container">
       <br><br>
-      <h1 class="header center orange-text">Web Development Demo</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">Let's try serveal functions.</h5>
-		  <div class="row">
-    <form class="col s12">
+      <h1 class="center first-title purple-text">Web Development Demo</h1>
+      <h2 class="center second-title">Let's try several functions.</h2>
+		</div>
+	<form class="">
       <div class="row">
-        <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Textarea</label>
+        <div class="textfield-container">
+          <textarea id="textarea1" rows="5" class="textarea-style"></textarea>
         </div>
       </div>
-    </form>
-  </div>
-      </div>
-      <div class="row center">
-        <a onclick="outOfOrder()" id="disorganize-button" class="btn-large waves-effect waves-light orange">Disorganize the text order</a>
-		<a onclick="translationresult()" id="translate-button" class="btn-large waves-effect waves-light deep-orange darken-3">Translate the Words(EN-CN)</a>
-		<a onclick="translationresult_cn()" id="translate-button-cn" class="btn-large waves-effect waves-light pink">Translate the Words(CN-EN)</a>
-      </div>
+    </form> 
 		<div class="row center">
-			<div class="row center"></div>
+        <button onclick="outOfOrder()" id="disorganize-button" class="btn-large">Disorganize the text order</button>
+		<button onclick="searchcap()" id="search-button" class="btn-large">Search Country / Region's Capital</button> 
+      </div>
+		<div class="center">
+			<div class="center first-title"></div>
+			<div class="center first-title"></div>
 			<div class="row center"></div>
 			<img id="imgbox" class="responsive-img" src="https://picsum.photos/200">
 			<div class="row center"></div>
-			<a onclick="resetImage()" id="image-button" class="btn-large waves-effect waves-light ">Change the image</a>
+			<button onclick="resetImage()" id="image-button" class="btn-large waves-effect waves-light ">Change the image</button>
 
 		</div>
-      <br><br>
-
-    </div>
-  </div>
-
-  <footer class="page-footer purple darken-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">New York University&nbsp;</h5>
-          <p class="grey-text text-lighten-4">Unless otherwise noted, all content copyright New York University.&nbsp;</p>
-          <p class="grey-text text-lighten-4">All rights reserved.</p>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Link Demo</h5>
-          <ul>
-            <li><a class="white-text" href="https://shanghai.nyu.edu/academics/majors/interactive-media-arts">Open the Link in page</a></li>
-            <li><a class="white-text" href="https://shanghai.nyu.edu/academics/majors/interactive-media-arts" target="_blank">Open the Link on page</a></li>
-
-          </ul>
-        </div>
-
-    
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/md5.js"></script>
-  <script src="js/functions.js"></script>
-
-  </body>
+	
+	</div>
+  <script src="functions.js"></script>
+</body>
 </html>
